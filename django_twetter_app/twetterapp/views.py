@@ -1,5 +1,5 @@
 from django.shortcuts import render
-import models
+from . import models
 
 def listtwet(request):
     all_tweet = models.Tweet.objects.all()
