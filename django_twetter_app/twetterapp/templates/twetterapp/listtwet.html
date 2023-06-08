@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{%block content%}
+<h1>List Twet</h1>
+<ul>
+    {% for tweet in tweet_dic %}
+    <li>{{tweet}}</li>
+    {%endfor%}
+</ul>
+
+{%endblock%}
