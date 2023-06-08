@@ -1,3 +1,4 @@
 from django.contrib import admin
+from twetterapp.models import Tweet
 
-# Register your models here.
+admin.site.register(Tweet)

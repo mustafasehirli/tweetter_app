@@ -3,8 +3,8 @@
 {%block content%}
 <h1>List Twet</h1>
 <ul>
-    {% for tweet in tweet_dic %}
-    <li>{{tweet}}</li>
+    {% for tweet in tweets %}
+    <li>{{tweet.nickName}}---{{tweet.messange}}</li>
     {%endfor%}
 </ul>
 
