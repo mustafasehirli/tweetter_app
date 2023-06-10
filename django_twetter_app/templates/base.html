@@ -96,11 +96,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'twetterapp:addtwet' %}">add twet</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}?next=/list">Logout</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-
+      
       {%block content%}
       {%endblock%}
 </body>
