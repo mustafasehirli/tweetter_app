@@ -22,3 +22,4 @@ urlpatterns = [
     path("", include("twetterapp.urls")),
     path("",include("django.contrib.auth.urls"))
 ]
+

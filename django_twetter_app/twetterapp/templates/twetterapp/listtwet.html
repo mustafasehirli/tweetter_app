@@ -4,7 +4,12 @@
 <h1>List Twet</h1>
 <ul>
     {% for tweet in tweets %}
-    <li>{{tweet.nickName}}---{{tweet.messange}}</li>
+    <li>{{tweet.username}}---{{tweet.messange}}</li>
+
+    {%if tweet.username == user%}
+    <a href="{% url 'twetterapp:delete' id=tweet.id %}" class="btn btn-danger" >delete</a>
+    {%endif%}
+
     {%endfor%}
 </ul>
 
